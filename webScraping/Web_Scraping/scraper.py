@@ -34,7 +34,7 @@ def get_citations_needed_report(url):
     report = ''
     for tag in citation_tags:
         passage = tag.find_parent('p')
-        report += passage.text.strip() + '\n'
+        report += '\n'+passage.text.strip()
 
     return report
 
